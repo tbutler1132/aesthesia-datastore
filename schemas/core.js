@@ -20,5 +20,11 @@ export default defineType({
             title: 'Complete',
             type: 'boolean',
         }),
+        defineField({
+            name: 'world',
+            title: 'World',
+            type: 'reference',
+            to: [{type: 'world'}]
+        })
     ],
   })
