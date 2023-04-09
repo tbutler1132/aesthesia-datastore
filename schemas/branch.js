@@ -1,14 +1,14 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-    name: 'core',
-    title: 'Core',
+    name: 'branch',
+    title: 'Branch',
     type: 'document',
     fields: [
         defineField({
-            name: 'version',
-            title: 'Version',
-            type: 'number',
+            name: 'title',
+            title: 'Title',
+            type: 'string',
         }),
         defineField({
             name: 'file',
@@ -16,13 +16,8 @@ export default defineType({
             type: 'file',
         }),
         defineField({
-            name: 'complete',
-            title: 'Complete',
-            type: 'boolean',
-        }),
-        defineField({
-            name: 'label',
-            title: 'Label',
+            name: 'description',
+            title: 'Description',
             type: 'string',
         }),
         defineField({
