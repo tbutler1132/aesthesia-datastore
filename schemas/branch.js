@@ -18,7 +18,13 @@ export default defineType({
         defineField({
             name: 'description',
             title: 'Description',
-            type: 'string',
+            type: 'text',
+        }),
+        defineField({
+            name: 'artwork',
+            title: 'Artwork',
+            type: 'reference',
+            to: [{type: 'artwork'}]
         }),
         defineField({
             name: 'world',

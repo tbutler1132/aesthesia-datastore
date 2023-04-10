@@ -23,6 +23,12 @@ export default defineType({
             of: [{type: 'reference', to: {type: 'video'}}],
         }),
         defineField({
+            name: 'branches',
+            title: 'Branch',
+            type: 'array',
+            of: [{type: 'reference', to: {type: 'branch'}}],
+        }),
+        defineField({
             name: 'cores',
             title: 'Core',
             type: 'array',
